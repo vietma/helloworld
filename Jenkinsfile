@@ -6,6 +6,7 @@ node {
     }
 
     stage ('Setup') {
+        sh 'npm config set registry http://registry.npmjs.org/'
         sh 'npm install'
     }
         

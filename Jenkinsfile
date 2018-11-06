@@ -7,6 +7,7 @@ node {
 
     stage ('Setup') {
         sh 'npm config set registry http://registry.npmjs.org/'
+        sh 'nvm install stable'
         sh 'npm install'
     }
         

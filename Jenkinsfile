@@ -13,7 +13,6 @@ node {
     stage ('Mocha test') {
         sh './node_modules/mocha/bin/mocha'
     }
-    
         
     stage ('Cleanup') {
         echo 'prune and cleanup'

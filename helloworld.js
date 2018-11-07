@@ -1,15 +1,26 @@
-var http = require("http")
+/* //Load express module with `require` directive
+var express = require("express");
+var app = express();
 
-http.createServer(function (request, response) {
+//Define request response in root URL (/)
+app.get("/", function(req, res) {
+  res.send("Hello World");
+});
 
-   // Send the HTTP header
-   // HTTP Status: 200 : OK
-   // Content Type: text/plain
-   response.writeHead(200, {'Content-Type': 'text/plain'})
+//Launch listening server on port 8080
+app.listen(8080, function() {
+  console.log("App listening on port 3000!");
+}); */
 
-   // Send the response body as "Hello World"
-   response.end('Hello World\n')
-}).listen(3000)
+//importing node framework
+var express = require("express");
 
-// Console will print the message
-console.log('Server running')
+var app = express();
+//Respond with "hello world" for requests that hit our root "/"
+app.get("/", function(req, res) {
+  res.send("hello world");
+});
+//listen to port 3000 by default
+app.listen(process.env.PORT || 3000);
+
+module.exports = app;

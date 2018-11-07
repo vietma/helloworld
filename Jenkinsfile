@@ -11,7 +11,7 @@ node {
     }
         
     stage ('Mocha test') {
-        sh './node_modules/mocha/bin/mocha'
+        sh './node_modules/mocha/bin/mocha --recursive --exit'
     }
     
         

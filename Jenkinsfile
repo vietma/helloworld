@@ -13,6 +13,7 @@ node {
     stage ('Mocha test') {
         sh './node_modules/mocha/bin/mocha --recursive --exit'
     }
+            
                
     stage ('Cleanup') {
         echo 'prune and cleanup'

@@ -4,7 +4,7 @@
   "description": "",
   "main": "helloworld.js",
   "scripts": {
-    "test": "mocha --recursive --exit"
+    "test": "./node_modules/mocha/bin/mocha --recursive --exit"
   },
   "repository": {
     "type": "git",

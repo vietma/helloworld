@@ -11,7 +11,7 @@ node {
     }
         
     stage ('Mocha test') {
-        sh './node_modules/mocha/bin/mocha --recursive --exit'
+        sh './node_modules/mocha/bin/mocha --timeout 15000 --recursive --exit'
     }
           
     /* stage ('Cleanup') {

@@ -14,9 +14,9 @@ node {
         sh './node_modules/mocha/bin/mocha --timeout 15000 --recursive --exit'
     }
           
-    /* stage ('Cleanup') {
+    stage ('Cleanup') {
         echo 'prune and cleanup'
         sh 'npm prune'
         sh 'rm node_modules -rf'
-    }     */    
+    }
 }
